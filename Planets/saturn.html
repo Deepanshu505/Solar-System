@@ -1,0 +1,89 @@
+<!-- saturn.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Facts - Saturn</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="fade-slide">
+      <h1 class="logo">THE PLANETS</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="mercury.html">Mercury</a></li>
+          <li><a href="venus.html">Venus</a></li>
+          <li><a href="earth.html">Earth</a></li>
+          <li><a href="mars.html">Mars</a></li>
+          <li><a href="jupiter.html">Jupiter</a></li>
+          <li><a href="saturn.html" class="active">Saturn</a></li>
+          <li><a href="uranus.html">Uranus</a></li>
+          <li><a href="neptune.html">Neptune</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="planet-container fade-in">
+      <section class="planet-visual">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Saturn_during_Equinox.jpg"
+          alt="Saturn"
+          class="planet-image rotate-animation"
+        />
+      </section>
+
+      <section class="planet-info">
+        <h2 class="planet-title">SATURN</h2>
+        <p class="planet-description">
+          Saturn is the sixth planet from the Sun and is famous for its
+          beautiful ring system. It is a gas giant composed mostly of hydrogen
+          and helium. Saturn has more than 80 moons, including Titan, the
+          second-largest moon in the solar system.
+        </p>
+        <p class="source">
+          <strong>Source:</strong>
+          <a href="https://en.wikipedia.org/wiki/Saturn" target="_blank"
+            >Wikipedia</a
+          >
+        </p>
+
+        <div class="tab-buttons">
+          <button class="tab-btn active" onclick="switchTab(0)">
+            Overview
+          </button>
+          <button class="tab-btn" onclick="switchTab(1)">
+            Internal Structure
+          </button>
+          <button class="tab-btn" onclick="switchTab(2)">
+            Surface Geology
+          </button>
+        </div>
+
+        <div class="tab-content">
+          <div class="tab-panel active">
+            Saturn's rings are made mostly of ice particles with a smaller
+            amount of rocky debris and dust.
+          </div>
+          <div class="tab-panel">
+            It has a small core of rock and metal surrounded by metallic
+            hydrogen.
+          </div>
+          <div class="tab-panel">
+            Saturn has no solid surface; its atmosphere features bands of
+            clouds.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="stats-grid zoom-in">
+      <div><span>Rotation Time</span><strong>0.45 Days</strong></div>
+      <div><span>Revolution Time</span><strong>10,759 Days</strong></div>
+      <div><span>Radius</span><strong>58,232 KM</strong></div>
+      <div><span>Avg Temp</span><strong>-140°C</strong></div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
